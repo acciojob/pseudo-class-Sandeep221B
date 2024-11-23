@@ -4,10 +4,46 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		#container{
+			margin:20px;
+			display:inline-block;
+			vertical-align:middle;
+			
+		}
+		#container::before{
+			content:"Before Element";
+			display:inline-block;
+			color:#f00;
+			font-size:20px;
+			vertical-align:middle;
+			
+		}
+		#container::after{
+			content:"After Element";
+			display:inline-block;
+			color:#f00;
+			font-size:20px;
+			vertical-align:middle;
+			
+		}
+		p{
+			margin:0;
+			display:inline;
+		}
+
+
+
+		
+	</style>
+	
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div id="container">
+		<p>This is the main container element</p>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
